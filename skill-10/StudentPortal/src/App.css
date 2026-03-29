@@ -1,0 +1,131 @@
+.student-manager {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px 32px;
+  box-sizing: border-box;
+}
+
+.student-manager h1 {
+  margin: 0 0 20px;
+  font-size: 36px;
+}
+
+.form-card,
+.table-card {
+  background-color: #ffffff;
+  border: 1px solid #d7dbe3;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.input-grid input {
+  padding: 10px;
+  border: 1px solid #b9c2d0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-grid button {
+  border: none;
+  border-radius: 6px;
+  background-color: #0b63ce;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.input-grid button:hover {
+  background-color: #094f9e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #d7dbe3;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f7ff;
+}
+
+.delete-button {
+  border: none;
+  border-radius: 6px;
+  background-color: #d92d20;
+  color: #ffffff;
+  padding: 7px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #b42318;
+}
+
+.empty-message {
+  margin: 0;
+  padding: 18px;
+  text-align: center;
+  color: #4b5565;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .student-manager {
+    margin: 24px auto;
+  }
+
+  .student-manager h1 {
+    font-size: 28px;
+  }
+
+  .input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table,
+  thead,
+  tbody,
+  tr,
+  td,
+  th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    border: 1px solid #d7dbe3;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #e9edf5;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+}

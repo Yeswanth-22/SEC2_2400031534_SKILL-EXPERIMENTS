@@ -1,0 +1,10 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean id="S" class="com.klu.beans.Student">
+  <constructor-arg name="sid" value="2400031534"></constructor-arg>
+  <constructor-arg name="sname" value="Gana"></constructor-arg>
+  <property name="course" value="CSE"></property>
+  <property name="academicyear" value="2025-2026"></property>
+  </bean>
+  </beans>
